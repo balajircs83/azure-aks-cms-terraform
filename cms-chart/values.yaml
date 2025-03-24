@@ -1,0 +1,29 @@
+replicaCount: 2
+
+image:
+  repository: cmsacr2025.azurecr.io/cms-app
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8000
+
+ingress:
+  enabled: true
+  hosts:
+    - host: cms-app.local  # Replace with your domain or use a local test domain
+      paths:
+        - path: /
+          pathType: Prefix
+
+env:
+  - name: SQL_SERVER
+    value: "cms-sql-server2025.database.windows.net"
+  - name: SQL_DB
+    value: "cms-db"
+  - name: SQL_USER
+    value: "sqladmin"
+  - name: SQL_PASSWORD
+    value: "P@ssw0rd123!"  # Consider using a Secret in production

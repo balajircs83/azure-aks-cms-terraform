@@ -1,0 +1,54 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which might contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used for local settings
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore lock files
+.terraform.lock.hcl
+
+# Ignore plan output files
+tfplan
+*.tfplan
+
+# Ignore .DS_Store files (for Mac OS)
+.DS_Store
+
+# Ignore .env files which might contain secrets
+.env
+
+# Ignore any local log files
+*.log
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore IntelliJ IDEA settings
+.idea/
+
+# Ignore editor backup files
+*~
+*.bak
+*.swp
+
+# Keep ignoring Qodo files
+.qodo
