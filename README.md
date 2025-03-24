@@ -27,6 +27,9 @@ This project demonstrates deploying a Customer Management System (CMS) applicati
 - **NGINX Ingress Controller**: Routes external traffic to the CMS app within AKS
 - **Local Testing Environment**: Debug pod (`curlimages/curl`) used for internal validation
 
+ ![Architecture Diagram](arch-diagram.png)
+
+
 ### Component Details
 #### AKS Cluster
 - Name: `cms-aks-cluster`

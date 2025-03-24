@@ -29,6 +29,7 @@ terraform.rc
 # Ignore plan output files
 tfplan
 *.tfplan
+terraform.tfstate
 
 # Ignore .DS_Store files (for Mac OS)
 .DS_Store
