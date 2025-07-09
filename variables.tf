@@ -30,29 +30,24 @@ variable "sql_admin_password" {
 variable "owner_name" {
   description = "Name of the resource owner"
   type        = string
-  default     = "Sandeep"
 }
 
 variable "owner_phone_email" {
   description = "Contact info (phone or email) of the owner"
   type        = string
-  default     = "sandeepg@newtglobalcorp.com"
 }
 
 variable "poc_name" {
   description = "Name of the point of contact"
   type        = string
-  default     = "Sample PoC"
 }
 
 variable "approver" {
   description = "Name of the approver"
   type        = string
-  default     = "Sandeep"
 }
 
 variable "valid_till_date" {
   description = "Date until which the resources are valid (e.g., YYYY-MM-DD)"
   type        = string
-  default     = "31-Mar-2025"
 }
